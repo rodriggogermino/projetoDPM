@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Playfair Display';
 }
 
 html {
@@ -14,15 +14,16 @@ nav {
     width: 100%;
     padding: 30px 50px;
     box-sizing: border-box;
-    background-color: transparent;
-    position: absolute;
+    background-color: white;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 nav img {
-    height: 70px;
+    height: 60px;
 }
 
 #navList {
@@ -33,61 +34,126 @@ nav img {
 
 #navList li a {
     text-decoration: none;
-    color: white;
+    color: black;
     gap: 1.5em;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /*--------- secção introSection ---------*/
 #introSection {
     height: 100vh;
     width: 100%;
-    background-image: url(Imagens/introBG.png);
-    background-size: cover;
+    background-color: white;
+    display: flex;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
 #introSection div {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin-top: 100px;
     padding: 50px;
-    color: white;
-}
-
-#introSection div h1 {
-    font-size: 50px;
-    font-weight: 200;
+    text-align: right;
+    color: black;
 }
 
 #introSection div h3 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 300;
 }
+
+#introSection div img {
+    height: 450px;
+}
+
+/*--------- secção descricaoSection ---------*/
+#descricaoSection {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+#descricaoSection div {
+   width: 45%;
+}
+
+#descricaoSection div h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+} 
+
+#descricaoSection div p {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+} 
 
 /*--------- secção ondeEstamos ---------*/
 #ondeEstamos {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: black
+    background-color: white;
+    box-sizing: border-box;
 }
 
 #ondeEstamos_Left {
-    background-image: url(Imagens/corticaImagem.jpg);
+    background-image: url(Imagens/baloesCoruche.jpg);
     background-size: cover;
-    background-position: center;
     width: 40%;
     height: 100%;
-    opacity: 50%;
 }
 
 #ondeEstamos_Left {
-    
+    position: relative;
+}
+
+#ondeEstamos_Left div {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 50px;
+    font-size: 40px;
 }
 
 #ondeEstamos_Right {
     width: 60%;
     height: 100%;
     background-color: white;
+    color: white;
+    align-items: end;
+    padding: 50px;
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+#ondeEstamos_Right iframe {
+    width: 400px;
+    height: 200px;
+    align-self: flex-start;
+}
+
+#ondeEstamos_Right div {
+    font-size: 20px;
+}
+
+#ondeEstamos_Right div h3 {
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+#ondeEstamos_Right div p {
+    font-weight: 300;
+}
+
