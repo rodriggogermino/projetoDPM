@@ -92,7 +92,9 @@ nav img {
 #descricaoSection {
     height: 100vh;
     width: 100%;
-    background-color: white;
+    background-image: url(Imagens/descBg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     box-sizing: border-box;
     align-items: center;
@@ -101,6 +103,8 @@ nav img {
 
 #descricaoSection div {
    width: 45%;
+   padding: 20px;
+   background-color: white;
 }
 
 #descricaoSection div h3 {
@@ -214,7 +218,7 @@ nav img {
 }
 
 .cardEventos {
-    border: 1px solid black;
+    border: 1px solid transparent;
     height: 300px;
     width: 300px;
     display: flex;
@@ -286,3 +290,5 @@ nav img {
 .cardsEventos_Home a:hover{
     color: gray;
 }
+
+
