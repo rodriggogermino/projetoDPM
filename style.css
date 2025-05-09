@@ -7,10 +7,27 @@
 html {
     scroll-behavior: smooth;
 }
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.container::-webkit-scrollbar {
+    display: none;              /* Chrome, Safari, Opera */
+  }
+
+.section {
+    scroll-snap-align: start;
+}
 
 /*-------------------- index.html --------------------*/
 /*--------- navbar ---------*/
 nav {
+    height: 100px;
     width: 100%;
     padding: 30px 50px;
     box-sizing: border-box;
@@ -38,6 +55,7 @@ nav img {
     gap: 1.5em;
     font-weight: 500;
 }
+
 
 /*--------- secção introSection ---------*/
 #introSection {
@@ -103,8 +121,6 @@ nav img {
 }
 
 #ondeEstamos_Left {
-    background-image: url(Imagens/baloesCoruche.jpg);
-    background-size: cover;
     width: 40%;
     height: 100%;
 }
@@ -114,11 +130,11 @@ nav img {
 }
 
 #ondeEstamos_Left div {
-    color: white;
+    color: black;
     position: absolute;
     bottom: 0;
-    right: 0;
-    text-align: right;
+    left: 0;
+    text-align: left;
     padding: 50px;
     font-size: 40px;
 }
@@ -127,20 +143,13 @@ nav img {
     width: 60%;
     height: 100%;
     background-color: white;
-    color: white;
+    color: black;
     align-items: end;
     padding: 50px;
     
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-#ondeEstamos_Right iframe {
-    width: 400px;
-    height: 200px;
-    align-self: flex-start;
+    align-items: end;
 }
 
 #ondeEstamos_Right div {
@@ -150,10 +159,122 @@ nav img {
 #ondeEstamos_Right div h3 {
     padding-bottom: 20px;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #ondeEstamos_Right div p {
     font-weight: 300;
 }
+/*--------- secção sectionEventos ---------*/
+#sectionEventos {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#eventosTop {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#eventosTop h3 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#eventosBottom {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardsEventos_Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.cardEventos {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#cardEvento_1 {
+    background-image: url(Imagens/corticaImagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cardEventos_Container {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+#textoCard1_Eventos {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard1_Eventos h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard1_Eventos h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardEvento_2 {
+    background-image: url(Imagens/corridaDasPontes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cardEvento_2 h3 {
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#cardEvento_3 {
+    background-image: url(Imagens/sonsDeVerao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cardEvento_3 h3 {
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/*
+
+.cardsEventos_Home a {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.cardsEventos_Home a:hover{
+    color: gray;
+}
+    */
