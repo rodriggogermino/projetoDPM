@@ -54,8 +54,12 @@ nav img {
     color: black;
     gap: 1.5em;
     font-weight: 500;
+    transition: 0.4s;
 }
 
+#navList li a:hover {
+    color: gray;
+}
 
 /*--------- secção introSection ---------*/
 #introSection {
@@ -178,13 +182,20 @@ nav img {
     height: 30%;
     width: 100%;
     display: flex;
-    align-items: end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 }
 
 #eventosTop h3 {
     font-weight: 300;
     font-size: 25px;
+}
+
+#eventosTop p {
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
 }
 
 #eventosBottom {
@@ -266,8 +277,6 @@ nav img {
     padding-bottom: 10px;
 }
 
-/*
-
 .cardsEventos_Home a {
     text-decoration: none;
     color: black;
@@ -277,4 +286,3 @@ nav img {
 .cardsEventos_Home a:hover{
     color: gray;
 }
-    */
