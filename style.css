@@ -94,7 +94,6 @@ nav img {
     width: 100%;
     background-image: url(Imagens/descBg.jpg);
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     box-sizing: border-box;
     align-items: center;
@@ -134,7 +133,9 @@ nav img {
 }
 
 #ondeEstamos_Left {
-    position: relative;
+    background-image: url(Imagens/rioImagem.jpg);
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 #ondeEstamos_Left div {
@@ -172,7 +173,24 @@ nav img {
 
 #ondeEstamos_Right div p {
     font-weight: 300;
+    padding-bottom: 20px;
 }
+
+#ondeEstamos_Right div a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
+    padding: 8px 10px;
+}
+
+#ondeEstamos_Right div a:hover {
+    background-color: black;
+    color: white;
+}
+
+
 /*--------- secção sectionEventos ---------*/
 #sectionEventos {
     height: 100vh;
@@ -232,6 +250,12 @@ nav img {
     background-repeat: no-repeat;
 }
 
+#cardDescobre_1 {
+    background-image: url(Imagens/corticaImagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .cardEventos_Container {
     width: 100%;
     color: white;
@@ -263,13 +287,27 @@ nav img {
     background-repeat: no-repeat;
 }
 
+#cardDescobre_2 {
+    background-image: url(Imagens/gastronomia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #cardEvento_2 h3 {
     font-weight: 300;
     font-size: 20px;
     padding-bottom: 10px;
 }
 
+
+
 #cardEvento_3 {
+    background-image: url(Imagens/sonsDeVerao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cardDescobre_3 {
     background-image: url(Imagens/sonsDeVerao.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,13 +320,16 @@ nav img {
 }
 
 .cardsEventos_Home a {
+    border: 1px solid black;
+    padding: 10px 15px;
     text-decoration: none;
     color: black;
     transition: 0.4s;
 }
 
 .cardsEventos_Home a:hover{
-    color: gray;
+    color: white;
+    background-color: black;
 }
 
 

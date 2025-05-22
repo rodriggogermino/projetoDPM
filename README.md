@@ -4,9 +4,7 @@ Repositório para o projeto da disciplina de Desenvolvimento de Produtos Multim�
 ## Autores
 Rodrigo Germino e Sandro Filipe
 
-## Descrição
-
-🌿 visitCoruche – Capital Mundial da Cortiça
+## 🌿 visitCoruche – Capital Mundial da Cortiça
 
 visitCoruche é um site dedicado a promover o turismo e a cultura da vila de Coruche, situada no coração do Ribatejo, Portugal. Conhecida como a "Capital Mundial da Cortiça", Coruche oferece uma combinação única de tradição, natureza e gastronomia. Este projeto visa destacar os principais atrativos da região, facilitando o acesso a informações para visitantes e moradores.
 
