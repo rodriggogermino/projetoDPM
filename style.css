@@ -430,7 +430,7 @@ nav img {
         background-image: url(Imagens/fotoHomepage.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: -450px;
+        background-position: bottom;
     }
     #introSection {
         align-items: end;
