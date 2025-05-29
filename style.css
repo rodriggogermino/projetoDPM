@@ -7,6 +7,12 @@
 html {
     scroll-behavior: smooth;
 }
+
+::selection {
+  color: white;
+  background: lightgray;
+}
+
 .container {
     height: 100vh;
     overflow-y: scroll;
@@ -43,10 +49,18 @@ nav img {
     height: 60px;
 }
 
+#logoBrancoNav {
+    display: none;
+}
+
 #navList {
     display: flex;
     list-style: none;
     gap: 1.5em;
+}
+
+#sidebarBtn {
+    display: none;
 }
 
 #navList li a {
@@ -59,6 +73,46 @@ nav img {
 
 #navList li a:hover {
     color: gray;
+}
+
+/*--------- sideBar ---------*/
+.sidenav {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
+  right: 0;
+  background-color: white; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: gray;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
 /*--------- secção introSection ---------*/
@@ -85,7 +139,8 @@ nav img {
 }
 
 #introSection div img {
-    height: 450px;
+    max-width: 100%;
+    max-height: 450px;
 }
 
 /*--------- secção descricaoSection ---------*/
@@ -299,8 +354,6 @@ nav img {
     padding-bottom: 10px;
 }
 
-
-
 #cardEvento_3 {
     background-image: url(Imagens/sonsDeVerao.jpg);
     background-size: cover;
@@ -333,3 +386,75 @@ nav img {
 }
 
 
+
+/*--------- media querys  ---------*/
+
+/* General mobile styles (phones and small tablets in portrait and landscape) */
+@media only screen and (max-width: 900px) {
+    
+    /*-------------------- index.html --------------------*/
+    /*--------- navbar ---------*/
+    nav {
+        padding: 20px;
+        background-color: transparent;
+    }
+    nav img {
+        height: 60px;
+    }
+    #logoNav {
+        display: none;
+    }
+    #logoBrancoNav {
+        display: flex;
+    }
+
+    #sidebarBtn {
+        display: flex;
+        font-size: 30px;
+        color: white;
+    }
+
+    #navList li a {
+        display: none;
+    }
+
+    /*--------- sideBar ----------*/
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+
+    /*--------- secção introSection ---------*/
+    #introSection {
+        background-image: url(Imagens/fotoHomepage.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -450px;
+    }
+    #introSection {
+        align-items: end;
+        justify-content: end;
+    }
+    #introSection div h3 {
+        color: white;
+        font-size: 35px;
+    }
+    #introSection div img {
+        display: none;
+    }
+
+    /*--------- secção descricaoSection ---------*/
+    #descricaoSection {
+        backdrop-filter: brightness(10%);
+    }
+
+    #descricaoSection div h3 {
+        font-size: 16px;
+    }    
+    #descricaoSection div p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets in portrait and landscape, and larger devices */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+}
