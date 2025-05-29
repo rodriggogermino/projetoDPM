@@ -20,6 +20,6 @@ GitHub Pages: Hospedagem do site de forma gratuita e eficiente. <br>
 Design Responsivo : Layout adaptável a diferentes dispositivos, incluindo smartphones e tablets. <br>
 
 ## 📲 | Links Úteis 
-https://rodriggogermino.github.io/projetoDPM/
+https://rodriggogermino.github.io/projetoDPM/ <br>
 <img style="text-align: left" width="200px" alt="QRCode" src="https://github.com/user-attachments/assets/8149344a-1e1a-42b1-87fd-d2df7c1ea121">
 
