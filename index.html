@@ -6,13 +6,20 @@
     <link rel="icon" href="Imagens/visitcorucheLogoWhite.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>visitCoruche</title>
 </head>
 <body>
     <nav>
-        <a href="index.html#introSection"><img src="Imagens/visitcorucheLogo.png" alt="Logotipo visitCoruche"></a>
+        <a id="logoBrancoNav" href="index.html#introSection"><img src="Imagens/visitcorucheLogoWhite.png" alt="Logotipo visitCoruche"></a>
+        <a id="logoNav" href="index.html#introSection"><img src="Imagens/visitcorucheLogo.png" alt="Logotipo visitCoruche"></a>
         <div>
             <ul id="navList">
                 <li><a href="index.html#ondeEstamos">COMO CHEGAR?</a></li>
@@ -20,9 +27,18 @@
                 <li><a href="">LUGARES</a></li>
                 <li><a href="">GASTRONOMIA</a></li>
                 <li><a href="">ALOJAMENTOS</a></li>
+                <li><i onclick="openNav()" id="sidebarBtn" class="fa-light fa-bars-staggered"></i></li>
             </ul>
-        </div>
+        </div>  
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html#ondeEstamos">COMO CHEGAR?</a>
+        <a href="index.html#sectionEventos">EVENTOS</a>
+        <a href="#">LUGARES</a>
+        <a href="#">GASTRONOMIA</a>
+        <a href="#">ALOJAMENTOS </a>
+    </div>
     <div class="container">
         <section class="section" id="introSection">
             <div>
