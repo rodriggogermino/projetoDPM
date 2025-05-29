@@ -21,5 +21,5 @@ Design Responsivo : Layout adaptável a diferentes dispositivos, incluindo smart
 
 ## 📲 | Links Úteis 
 https://rodriggogermino.github.io/projetoDPM/
-![frame](https://github.com/user-attachments/assets/8149344a-1e1a-42b1-87fd-d2df7c1ea121)
+<img width="200px" alt="QRCode" src="https://github.com/user-attachments/assets/8149344a-1e1a-42b1-87fd-d2df7c1ea121">
 
