@@ -9,25 +9,8 @@ html {
 }
 
 ::selection {
-  color: white;
-  background: lightgray;
-}
-
-.container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-}
-
-.container::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari, Opera */
-  }
-
-.section {
-    scroll-snap-align: start;
+    color: white;
+    background: lightgray;
 }
 
 /*-------------------- index.html --------------------*/
@@ -63,6 +46,10 @@ nav img {
     display: none;
 }
 
+#sidebarBtnBlack {
+    display: none;
+}
+
 #navList li a {
     text-decoration: none;
     color: black;
@@ -77,42 +64,42 @@ nav img {
 
 /*--------- sideBar ---------*/
 .sidenav {
-  height: 100%;
-  width: 0; 
-  position: fixed; 
-  z-index: 1;
-  top: 0; 
-  right: 0;
-  background-color: white; 
-  overflow-x: hidden; 
-  padding-top: 60px;
-  transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: gray;
+    color: gray;
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 /*--------- secção introSection ---------*/
@@ -156,22 +143,22 @@ nav img {
 }
 
 #descricaoSection div {
-   width: 45%;
-   padding: 20px;
-   background-color: white;
+    width: 45%;
+    padding: 20px;
+    background-color: white;
 }
 
 #descricaoSection div h3 {
     font-size: 20px;
     font-weight: 300;
     text-align: center;
-} 
+}
 
 #descricaoSection div p {
     padding-top: 30px;
     font-size: 20px;
     text-align: center;
-} 
+}
 
 /*--------- secção ondeEstamos ---------*/
 #ondeEstamos {
@@ -210,7 +197,6 @@ nav img {
     color: black;
     align-items: end;
     padding: 50px;
-    
     box-sizing: border-box;
     display: flex;
     align-items: end;
@@ -230,6 +216,7 @@ nav img {
 #ondeEstamos_Right div p {
     font-weight: 300;
     padding-bottom: 20px;
+    width: 70%;
 }
 
 #ondeEstamos_Right div a {
@@ -300,15 +287,16 @@ nav img {
     display: flex;
     align-items: end;
     justify-content: center;
+    border: 3px solid transparent;
+    transition: 0.4s;
+}
+
+.cardEventos:hover {
+    border-color: black;
+
 }
 
 #cardEvento_1 {
-    background-image: url(Imagens/corticaImagem.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#cardDescobre_1 {
     background-image: url(Imagens/corticaImagem.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,12 +333,6 @@ nav img {
     background-repeat: no-repeat;
 }
 
-#cardDescobre_2 {
-    background-image: url(Imagens/gastronomia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 #cardEvento_2 h3 {
     font-weight: 300;
     font-size: 20px;
@@ -358,12 +340,6 @@ nav img {
 }
 
 #cardEvento_3 {
-    background-image: url(Imagens/sonsDeVerao.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#cardDescobre_3 {
     background-image: url(Imagens/sonsDeVerao.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -383,47 +359,469 @@ nav img {
     transition: 0.4s;
 }
 
-.cardsEventos_Home a:hover{
+.cardsEventos_Home a:hover {
     color: white;
     background-color: black;
 }
 
+/*--------- secção sectionLugares ---------*/
+#sectionLugares {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#lugaresTop {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#lugaresTop h3 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#lugaresTop p {
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
+}
+
+#lugaresBottom {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardLugares_1 {
+    background-image: url(Imagens/castelo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard1_Lugares {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard1_Lugares h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard1_Lugares h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardLugares_2 {
+    background-image: url(Imagens/museu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard2_Lugares {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard2_Lugares h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard2_Lugares h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardLugares_3 {
+    background-image: url(Imagens/observatorio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard3_Lugares {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard3_Lugares h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard3_Lugares h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/*--------- secção sectionGastronomia ---------*/
+#sectionGastronomia {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gastronomiaTop {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#gastronomiaTop h3 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#gastronomiaTop p {
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
+}
+
+#gastronomiaBottom {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardGastronomia_1 {
+    background-image: url(Imagens/acordaOvas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard1_Gastronomia {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard1_Gastronomia h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard1_Gastronomia h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardGastronomia_2 {
+    background-image: url(Imagens/Ensopado-de-Borrego.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard2_Gastronomia {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard2_Gastronomia h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard2_Gastronomia h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardGastronomia_3 {
+    background-image: url(Imagens/sopaPeixe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard3_Gastronomia {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard3_Gastronomia h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard3_Gastronomia h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardGastronomia_4 {
+    background-image: url(Imagens/MigasCarneAlguidarEntrecosto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard4_Gastronomia {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard4_Gastronomia h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard4_Gastronomia h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardGastronomia_5 {
+    background-image: url(Imagens/arrozLebre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard5_Gastronomia {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard5_Gastronomia h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard5_Gastronomia h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardGastronomia_6 {
+    background-image: url(Imagens/linguicas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard6_Gastronomia {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard6_Gastronomia h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard6_Gastronomia h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/*--------- Página Gastronomia ---------*/
+#gastronomiaMain {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 30px;
+    /* Adjust for navbar height */
+}
+
+#gastronomiaMainTop {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#gastronomiaMainBottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/*--------- secção sectionAlojamentos ---------*/
+#sectionAlojamentos {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#alojamentosTop {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#alojamentosTop h3 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#alojamentosTop p {
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
+}
+
+#alojamentosBottom {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardAlojamentos_1 {
+    background-image: url(Imagens/casaIngleses.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard1_Alojamentos {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard1_Alojamentos h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard1_Alojamentos h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardAlojamentos_2 {
+    background-image: url(Imagens/monteMacario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard2_Alojamentos {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard2_Alojamentos h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard2_Alojamentos h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cardAlojamentos_3 {
+    background-image: url(Imagens/patioVilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textoCard3_Alojamentos {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#textoCard3_Alojamentos h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#textoCard3_Alojamentos h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/*--------- footer ---------*/
+footer {
+    padding: 20px 40px;
+    margin-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-left img {
+    height: 70px;
+}
+
+.footer-left h4 {
+    padding-top: 20px;
+}
+
+.footer-right img {
+    height: 40px;
+}
 
 /*--------- media querys  ---------*/
 
 /* General mobile styles (phones and small tablets in portrait and landscape) */
 @media only screen and (max-width: 900px) {
-    
+
     /*-------------------- index.html --------------------*/
     /*--------- navbar ---------*/
     nav {
         padding: 20px;
-        background-color: transparent;
+        background-color: transparent;   
     }
     nav img {
-        height: 60px;
+        height: 50px;
     }
-    #logoNav {
-        display: none;
-    }
-    #logoBrancoNav {
-        display: flex;
-    }
-
     #sidebarBtn {
         display: flex;
         font-size: 30px;
-        color: white;
+        color: black;
     }
-
+    #navList li a {
+        display: none;
+    }
     #navList li a {
         display: none;
     }
 
     /*--------- sideBar ----------*/
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 
     /*--------- secção introSection ---------*/
     #introSection {
@@ -432,15 +830,18 @@ nav img {
         background-repeat: no-repeat;
         background-position: bottom;
     }
+
     #introSection {
         align-items: end;
         justify-content: end;
         padding-bottom: 60px;
     }
+
     #introSection div h3 {
         color: white;
         font-size: 35px;
     }
+
     #introSection div img {
         display: none;
     }
@@ -449,12 +850,15 @@ nav img {
     #descricaoSection {
         backdrop-filter: brightness(10%);
     }
+
     #descricaoSection div {
         width: 70%;
-    }    
+    }
+
     #descricaoSection div h3 {
         font-size: 16px;
-    }    
+    }
+
     #descricaoSection div p {
         font-size: 14px;
     }
@@ -463,6 +867,7 @@ nav img {
     #ondeEstamos_Left {
         display: none;
     }
+
     #ondeEstamos_Right {
         background-image: url(Imagens/rioImagem.jpg);
         background-position: center;
@@ -472,24 +877,84 @@ nav img {
         justify-content: end;
         padding-bottom: 100px;
     }
+
     #ondeEstamos_Right img {
         width: 100px;
         display: none;
     }
+
     #ondeEstamos_Right div h3 {
         color: white;
+        text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.6);
     }
+
     #ondeEstamos_Right div a {
         color: white;
         border-color: white;
+        text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.6);
     }
+
     #ondeEstamos_Right div a:hover {
         color: black;
         background-color: white;
     }
+
+    /*--------- secção sectionEventos ---------*/
+    #sectionEventos {
+        height: fit-content;
+        padding: 100px 0;
+    }
+
+    #eventosTop {
+        margin-bottom: 20px;
+    }
+
+    /*--------- secção sectionLugares ---------*/
+    #sectionLugares {
+        height: fit-content;
+    }
+
+    #lugaresTop {
+        margin-bottom: 20px;
+    }
+
+    /*--------- secção sectionGastronomia ---------*/
+    #sectionGastronomia {
+        height: fit-content;
+    }
+
+    #gastronomiaTop {
+        margin-bottom: 20px;
+    }
+
+    /*--------- secção sectionAlojamentos ---------*/
+    #sectionAlojamentos {
+        height: fit-content;
+    }
+
+    #alojamentosTop {
+        margin-bottom: 20px;
+    }
+
+
+    /*--------- footer ---------*/
+    .footer-right img {
+        height: 30px;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: flex-start;
+        margin: 10px 0;
+    }
 }
 
 /* Tablets in portrait and landscape, and larger devices */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-
-}
+@media only screen and (min-width: 601px) and (max-width: 900px) {}

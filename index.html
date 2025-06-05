@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Imagens/visitcorucheLogoWhite.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>visitCoruche</title>
-</head>
-<body>
-    <nav>
-        <a id="logoBrancoNav" href="index.html#introSection"><img src="Imagens/visitcorucheLogoWhite.png" alt="Logotipo visitCoruche"></a>
-        <a id="logoNav" href="index.html#introSection"><img src="Imagens/visitcorucheLogo.png" alt="Logotipo visitCoruche"></a>
-        <div>
-            <ul id="navList">
-                <li><a href="index.html#ondeEstamos">COMO CHEGAR?</a></li>
-                <li><a href="index.html#sectionEventos">EVENTOS</a></li>
-                <li><a href="">LUGARES</a></li>
-                <li><a href="">GASTRONOMIA</a></li>
-                <li><a href="">ALOJAMENTOS</a></li>
-                <li><i onclick="openNav()" id="sidebarBtn" class="fa-light fa-bars-staggered"></i></li>
-            </ul>
-        </div>  
-    </nav>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html#ondeEstamos">COMO CHEGAR?</a>
-        <a href="index.html#sectionEventos">EVENTOS</a>
-        <a href="#">LUGARES</a>
-        <a href="#">GASTRONOMIA</a>
-        <a href="#">ALOJAMENTOS </a>
-    </div>
-    <div class="container">
-        <section class="section" id="introSection">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Imagens/visitcorucheLogoWhite.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>visitCoruche</title>
+    </head>
+    <body>
+        <nav>
+            <a id="logoNav" href="index.html#introSection"><img src="Imagens/visitcorucheLogo.png" alt="Logotipo visitCoruche"></a>
+            <div>
+                <ul id="navList">
+                    <li><a href="index.html#ondeEstamos">COMO CHEGAR?</a></li>
+                    <li><a href="index.html#sectionEventos">EVENTOS</a></li>
+                    <li><a href="index.html#sectionLugares">LUGARES</a></li>
+                    <li><a href="index.html#sectionGastronomia">GASTRONOMIA</a></li>
+                    <li><a href="index.html#sectionAlojamentos">ALOJAMENTOS</a></li>
+                    <li><i onclick="openNav()" id="sidebarBtn" class="fa-light fa-bars-staggered"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn"
+                onclick="closeNav()">&times;</a>
+            <a href="index.html#ondeEstamos">COMO CHEGAR?</a>
+            <a href="index.html#sectionEventos">EVENTOS</a>
+            <a href="index.html#sectionLugares">LUGARES</a>
+            <a href="index.html#sectionGastronomia">GASTRONOMIA</a>
+            <a href="index.html#sectionAlojamentos">ALOJAMENTOS </a>
+        </div>
+        <section id="introSection">
             <div>
                 <h3>onde o ribatejo é mais puro.</h3>
-                <img src="Imagens/fotoHomepage.png" alt="">
+                <img src="Imagens/fotoHomepage.png" alt>
             </div>
         </section>
         <section class="section" id="descricaoSection">
             <div>
                 <h3>
-                    coruche, no coração do Ribatejo, é uma vila encantadora banhada pelo rio Sorraia. Conhecida como "Capital Mundial da Cortiça", destaca-se pela natureza, tradição, património, festas populares e gastronomia, sendo um destino ideal para quem busca fugir da cidade.
+                    coruche, no coração do Ribatejo, é uma vila encantadora
+                    banhada pelo rio Sorraia. Conhecida como
+                    "Capital Mundial da Cortiça", destaca-se pela natureza,
+                    tradição, património, festas populares e gastronomia, sendo
+                    um destino ideal para quem busca fugir da cidade.
                 </h3>
                 <p style="color: gray;">visite-nos.</p>
             </div>
         </section>
-        <section class="section" id="ondeEstamos">
+        <section id="ondeEstamos">
             <div id="ondeEstamos_Left">
             </div>
             <div id="ondeEstamos_Right">
                 <div>
                     <h3>coruche,</h3>
                     <p>
-                        está a 78km de Lisboa, passando a ponte Vasco da Gama são apenas mais 50km até encontrar aquilo que procura: <b>mais qualidade de vida!</b>
-                        Liberte-se das filas de trânsito intermináveis, das buzinas, das sirenes, da poluição e do stress.
+                        está a 78km de Lisboa, passando a ponte Vasco da Gama
+                        são apenas mais 50km até encontrar aquilo que procura:
+                        <b>mais qualidade de vida!</b>
+                        Liberte-se das filas de trânsito intermináveis, das
+                        buzinas, das sirenes, da poluição e do stress.
                     </p>
-                    <a href="https://www.google.com/maps/place/Coruche/@38.9370025,-8.6658435,11z/">direções</a>
+                    <a
+                        href="https://www.google.com/maps/place/Coruche/@38.9370025,-8.6658435,11z/">direções</a>
                 </div>
-                <img src="Imagens/mapaPortugal.png" alt="">
             </div>
         </section>
-        <section class="section" id="sectionEventos">
+        <section id="sectionEventos">
             <div id="eventosTop">
-                <h3>descubra também</h3>
-                <p>próximos eventos.</p>
+                <h3>próximos eventos</h3>
+                <p>que de certeza não quer perder.</p>
             </div>
             <div id="eventosBottom">
                 <div class="cardsEventos_Home">
@@ -97,10 +110,140 @@
                             <p>14 de junho - 12 de julho</p>
                         </div>
                     </div>
-                    <a href="">ver mais.</a>
                 </div>
             </div>
         </section>
-    </div>
-</body>
+        <section id="sectionLugares">
+            <div id="lugaresTop">
+                <h3>lugares para visitar</h3>
+                <p>onde pode desfrutar à vontade com a sua família.</p>
+            </div>
+            <div id="lugaresBottom">
+                <div class="cardsEventos_Home">
+                    <div class="cardEventos" id="cardLugares_1">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard1_Lugares">
+                                <h3>igreja n.sra. do castelo</h3>
+                                <h4>e que tal uma pausa?</h4>
+                            </div>
+                            <p>miradouro.</p>
+                        </div>
+                    </div>
+                    <div class="cardEventos" id="cardLugares_2">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard2_Lugares">
+                                <h3>museu municipal</h3>
+                                <h4>conheça a nossa história.</h4>
+                            </div>
+                            <p>museu.</p>
+                        </div>
+                    </div>
+                    <div class="cardEventos" id="cardLugares_3">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard3_Lugares">
+                                <h3>observatório</h3>
+                                <h4>aprecie a nossa arquitetura.</h4>
+                            </div>
+                            <p>museu.</p>
+                        </div>
+                    </div>
+                    <a href>ver mais.</a>
+                </div>
+            </div>
+        </section>
+        <section id="sectionGastronomia">
+            <div id="gastronomiaTop">
+                <h3>gastronomia local</h3>
+                <p>sabores autênticos do Ribatejo.</p>
+            </div>
+            <div id="gastronomiaBottom">
+                <div class="cardsEventos_Home">
+                    <div class="cardEventos" id="cardGastronomia_1">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard1_Gastronomia">
+                                <h3>Açorda de Sável com Ovas</h3>
+                                <h4>Prato emblemático da zona do rio Sorraia.
+                                    Feito com sável (peixe de rio), pão, alho,
+                                    azeite, coentros e ovos escalfados ou ovas
+                                    do próprio peixe.</h4>
+                            </div>
+                            <p>culinária tradicional.</p>
+                        </div>
+                    </div>
+                    <div class="cardEventos" id="cardGastronomia_2">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard2_Gastronomia">
+                                <h3>Ensopado de Borrego</h3>
+                                <h4>Borrego estufado com pão caseiro embebido no
+                                    molho. Muito consumido na Páscoa e em festas
+                                    tradicionais.</h4>
+                            </div>
+                            <p>prato regional.</p>
+                        </div>
+                    </div>
+                    <div class="cardEventos" id="cardGastronomia_3">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard3_Gastronomia">
+                                <h3>Sopa de Peixe do Sorraia</h3>
+                                <h4>Sopa rica feita com vários peixes do rio
+                                    (como o barbo e o sável), com tomate,
+                                    pimentos e hortelã.</h4>
+                            </div>
+                            <p>culinária tradicional.</p>
+                        </div>
+                    </div>
+                    <a href="gastronomia.html">ver mais.</a>
+                </div>
+            </div>
+        </section>
+        <section id="sectionAlojamentos">
+            <div id="alojamentosTop">
+                <h3>alojamentos</h3>
+                <p>onde pode descansar com conforto.</p>
+            </div>
+            <div id="alojamentosBottom">
+                <div class="cardsEventos_Home">
+                    <div class="cardEventos" id="cardAlojamentos_1">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard1_Alojamentos">
+                                <h3>casa dos ingleses</h3>
+                                <h4>vista para o Sorraia.</h4>
+                            </div>
+                            <p>desde 60 €</p>
+                        </div>
+                    </div>
+                    <div class="cardEventos" id="cardAlojamentos_2">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard2_Alojamentos">
+                                <h3>Monte Macário</h3>
+                                <h4>imerso na natureza.</h4>
+                            </div>
+                            <p>desde 85 €</p>
+                        </div>
+                    </div>
+                    <div class="cardEventos" id="cardAlojamentos_3">
+                        <div class="cardEventos_Container">
+                            <div id="textoCard3_Alojamentos">
+                                <h3>Patio Da Villa</h3>
+                                <h4>história e conforto.</h4>
+                            </div>
+                            <p>desde 100 €</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="Imagens/visitcorucheLogo.png" alt="Visit Coruche">
+                    <h4>desenvolvido por:</h4>
+                    <p>rodrigo germino e sandro filipe.</p>
+                </div>
+                <div class="footer-right">
+                    <img src="Imagens/alentejo2020.jpg" alt="Alentejo 2020">
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
